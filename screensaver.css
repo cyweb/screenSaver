@@ -1,0 +1,54 @@
+body{
+  margin:0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.75);
+  overflow: hidden;
+}
+#screenSaverX{
+  transition: all 0.2s ease-out;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 99999;
+  background: rgba(0,0,0,0.8);
+  display: none;
+  user-select: none;
+}
+#screenSaverX_video{
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 9999;
+  background: transparent;
+  display: none;
+}
+#screenSaverX_video video{
+  transition: all 0.6s ease-out;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+}
+
+
+
+
+
+
+.container{
+  width: 100%;
+  height: 100%;
+  margin:0 auto;
+  padding: 0%;
+  text-align: center;
+}
+.container img{
+  width: 65%;
+  height: auto;
+}
