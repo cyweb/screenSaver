@@ -14,7 +14,7 @@ Run screensaver
 ```js
 <script type="text/javascript">
   window.onload = function(){
-      run_screen_server_x({
+      run_screen_saver_x({
           "backgroundColor": "rgba(0,0,0,0.85)",
           "videoOpacity": 0.7,
           "timeout": 5,
