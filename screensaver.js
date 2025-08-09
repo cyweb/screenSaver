@@ -15,10 +15,6 @@ function stop_screen_saver_X(){
   run_screen_saver_x(screenSaverConfig);
 }
 
-["mousemove", "mouseover", "touchmove", "click", "keypress", "keydown"].forEach(function(e) {
-  window.addEventListener(e, stop_screen_saver_X);
-});
-
 window.addEventListener('load', function(){ 
   screenSaverX = document.createElement("div");
   screenSaverX.id = "screenSaverX";
@@ -27,6 +23,10 @@ window.addEventListener('load', function(){
   screenSaverX_video = document.createElement("div");
   screenSaverX_video.id = "screenSaverX_video";
   document.body.appendChild(screenSaverX_video);
+
+  ["mousemove", "click", "keypress", "keydown"].forEach(function(e) {
+    window.addEventListener(e, stop_screen_saver_X);
+  });
 });
 
 function screen_saver_X(){
